@@ -5,15 +5,12 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home</title>
+    <title>Reverse</title>
 </head>
 <body>
-<h1>Vice Versa</h1>
-<form action="{% url 'reverse' %}">
-    <textarea name="usertext" cols="50" rows="10"></textarea>
-    <br><br>
-    <input type="submit" value="Reverse!">
-</form>
-
+<h2>Original Text</h2>
+{{usertext}}
+<h2>Reversed Text</h2>
+{{reversedtext}}
 </body>
 </html>
